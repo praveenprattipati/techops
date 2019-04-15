@@ -1,0 +1,39 @@
+{
+    "AWSTemplateFormatVersion": "2010-09-09",
+    "Metadata": {
+        "AWS::CloudFormation::Designer": {
+            "eb0f03d0-4308-4fac-b8c9-1e4000dfa92f": {
+                "size": {
+                    "width": 60,
+                    "height": 60
+                },
+                "position": {
+                    "x": 201,
+                    "y": 127
+                },
+                "z": 0
+            }
+        }
+    },
+    "Resources": {
+        "testrds": {
+            "Type": "AWS::RDS::DBInstance",
+            "Properties": {
+                "DBInstanceClass": "db.t2.micro",
+                "AllocatedStorage": "20",
+                "Engine": "postgres",
+                "DBInstanceIdentifier": "dbmaster",
+                "EngineVersion": "9.6.5",
+                "MasterUsername": "testrds",
+                "MasterUserPassword": "Passw0rd",
+                "DBName": "praveen",
+                "DeletionProtection" : "True"
+            },
+            "Metadata": {
+                "AWS::CloudFormation::Designer": {
+                    "id": "eb0f03d0-4308-4fac-b8c9-1e4000dfa92f"
+                }
+            }
+        }
+    }
+}
