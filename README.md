@@ -1,5 +1,7 @@
-# techops
-This is about the technical operations team "techops" in health and wellness orginization. 
+# praveen-Techops
 
-we handle everyday about all deployments, monitoring of the infrastrucutre.
+This one contains 2 cloudformation templates
+
+one is for simple s3
+one is for simple rds postgresql
 
